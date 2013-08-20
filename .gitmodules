@@ -1,0 +1,3 @@
+[submodule "firmware/clixxlib"]
+	path = firmware/clixxlib
+	url = https://github.com/thegaragelab/clixxlib.git
