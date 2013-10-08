@@ -32,7 +32,7 @@ module TwinTabCutout(x, y, slip = SLIPPAGE, depth = 4) {
       // Make the header
       cube(size = [ TWIN_TAB_HEADER + (2 * slip), HEADER_HEIGHT + (2 * slip), 2 * depth ], center = true);
       // Make space for the tabs
-      translate(v = [ 0, (TAB_HEIGHT + HEADER_HEIGHT) / 2, 0 ]) {
+      translate(v = [ 0, -(TAB_HEIGHT + HEADER_HEIGHT) / 2, 0 ]) {
         cube(size = [ (2 * TAB_WIDTH) + TWIN_TAB_GAP + (2 * slip), TAB_HEIGHT + (2 * slip), 2 * depth ], center = true);
         }
       }
